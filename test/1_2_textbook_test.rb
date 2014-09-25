@@ -56,12 +56,13 @@ class TextbookTest < Minitest::Test
 
   def test_reads_from_an_existing_file
     skip
+    page_source = file_as_storage
     expected_data = page_data
     second_expected_data = second_page_data
     page = Page.new(expected_data)
     page2 = Page.new(second_expected_data)
 
-    textbook = Textbook.new(file_as_storage)
+    textbook = Textbook.new(page_source)
     textbook.insert(page)
     textbook.insert(page2)
 
