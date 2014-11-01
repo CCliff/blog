@@ -1,0 +1,279 @@
+html{
+	font-family: "Open Sans", sans-serif;
+}
+
+body{
+	background-image: url(../images/4.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 2048px;
+}
+
+h1 {
+	width: 95%;
+	margin: auto;
+}
+
+h2 {
+	margin: 10px;
+}
+
+nav{
+	background: black;
+	opacity: .8;
+	height: 50px;
+	width: 100%;
+	border-top: 5px solid rgb(188, 215, 226);
+}
+
+nav ul {
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    float: left;
+    padding: 14px;
+    /* margin: 5px; */
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+input.nav {
+	color: white;
+	background: none;
+	border: 1px solid white;
+	margin: -10px;
+	padding: 5px 10px;
+	border-radius: 7px;
+	font-weight: 600;
+}
+
+#nav-ul:nth-child(1){
+	margin-left: -50px;
+}
+
+#nav-ul li:hover{
+	background: rgb(188, 215, 226);
+}
+
+#nav-ul li:hover{
+	color: black;
+}
+
+#logout{
+	float: right;
+}
+
+#nav-ul #logout:hover{
+	background: black;
+}
+
+#nav-ul #logout:hover input{
+	background: white;
+	color: black;
+	border: 1px solid #bbb;
+}
+
+.container{
+	width: 90%;
+	max-width: 900px;
+	margin: auto;
+
+}
+
+.content{
+	background: white;
+	padding: 10px;
+	border: 1px dashed #CCC;
+	box-shadow: 2px 2px 4px #ccc;
+	border-radius: 7px;
+	margin-top: 15px;
+}
+
+.post{
+	width: 90%;
+	margin: 15px auto;
+	background: white;
+	padding: 15px;
+	border: 1px dashed #ccc;
+	box-shadow: 2px 2px 4px #ccc;
+	border-radius: 7px;
+}
+
+.post-buttons {
+	float: right;
+	width: 170px;
+}
+
+.post-buttons input {
+	float: left;
+	width: 75px;
+	background: none;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #ccc;
+	margin: 5px;
+	visibility: hidden;
+}
+
+.post-buttons input:hover {
+	border: 1px solid #000;
+	color: #000;
+}
+
+.post:hover{
+	border: 1px dashed #aaa;
+	box-shadow: 2px 2px 4px #aaa;
+}
+
+.header{
+	margin: -16px;
+	background: rgb(188, 215, 226);
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	padding: 1px 5px;
+}
+
+.post:hover .header{
+	background: rgb(137, 177, 193);
+}
+
+.post:hover .post-buttons input{
+	visibility: visible;
+}
+
+.form_block {
+	float: left;
+	margin: 15px;
+}
+
+.form_block label {
+	display: block;
+}
+
+.form {
+    width: 460px;
+    margin: auto;
+}
+
+form.user {
+    width: 466px;
+}
+
+input {
+    height: 35px;
+}
+
+.create input {
+    display: block;
+    width: 95%;
+    margin: auto;
+}
+
+.create textarea {
+  width: 95%;
+	margin: 15px 0px 15px 18px;
+}
+
+.button{
+	color: white;
+	font-weight: 600;
+	width: calc(100% - 30px);
+	margin: 0 15px 15px;
+	height: 45px;
+	border: 2px solid black;
+	background: #444;
+	border-radius: 5px;
+	box-shadow: 2px 2px 11px rgb(123, 157, 163);
+}
+
+.small {
+	width: 100px;
+	height: 30px;
+	margin-bottom: 0px;
+}
+
+.tag {
+	background: rgb(188, 215, 226);
+	display: inline-block;
+	padding: 3px 15px;
+	margin-right: 10px;
+	border-radius: 15px;
+}
+
+.tags ul {
+    padding: 0;
+    margin: 0;
+}
+
+.tag label {
+    float: left;
+    margin-left: 10px;
+}
+
+ {
+}
+
+.tag form {
+    float: left;
+    margin: -1px -10px 0px 0px;
+}
+
+.tags {
+    display: inline-block;
+}
+
+.tag input {
+    background: none;
+    border: none;
+    margin: -7px 0px -7px;
+    padding: 0px 7px;
+    visibility: hidden;
+}
+
+.tag input:hover{
+	color: white;
+}
+
+.tag:hover{
+	background: rgb(137, 177, 193);
+}
+
+.tag:hover input{
+	visibility: visible;
+}
+
+.tag_form {
+    float: left;
+    margin-top: 10px;
+}
+
+.tag_form input[type="text"] {
+    height: 25px;
+    font-size: .8em;
+    width: 230px;
+}
+
+form {
+    margin-bottom: -2px;
+}
+
+/*CLEARFIX*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/*CLEARFIX*/
+

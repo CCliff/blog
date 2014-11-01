@@ -1,0 +1,13 @@
+<div class="tags">
+	<ul>
+		<% @tags.each do |tag| %>
+		<li class="tag">
+				<label><%= tag.name %></label>
+				<form action="/posts/<%= @post.id %>/tags/<%= tag.id %>" method="post">
+					<input type="hidden" name="_method" value="delete">
+					<input type="submit" value="x">
+					</form>
+			</li>
+		<% end %>
+	</ul>
+</div>

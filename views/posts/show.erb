@@ -1,0 +1,25 @@
+<div class="post cf">
+	<h1><%= @post.title %></h1>
+	<div>
+		<h3><%= @post.updated_at %></h3>
+		<p><%= @post.body %></p>
+		<%= erb :'tags/_tags' %>
+		<% if current_user %>
+		<div class="tag_form">
+			<form action="/posts/<%= @post.id %>/tags" method="post">
+				<input type="text" name="tags" placeholder="Enter tags separated by a comma">
+				<input class="button small" type="submit">
+			</form>
+		</div>
+		<div class="post-buttons">
+			<form action="/posts/<%= @post.id %>/edit" method="get">
+				<input type="submit" value="Edit">
+			</form>
+			<form action="/posts/<%= @post.id %>" method="post">
+				<input type="hidden" name="_method" value="delete">
+				<input type="submit" value="Delete">
+			</form>
+		</div>
+		<% end %>
+	</div>
+</div>
