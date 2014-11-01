@@ -138,6 +138,26 @@ input.nav {
 	border-top-left-radius: 7px;
 	border-top-right-radius: 7px;
 	padding: 1px 5px;
+	position: relative;
+}
+
+a.hide {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	font-size: 2em;
+	padding: 0;
+	margin-top: -10px;
+}
+
+a.show{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	font-size: 2em;
+	padding: 0;
+	margin-top: -10px;
+	display: none;
 }
 
 .post:hover .header{
